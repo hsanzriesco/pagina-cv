@@ -15,3 +15,6 @@ Web CV pública, responsive y sin dependencias de JavaScript.
 
 ## Nota
 El contenido se ha creado a partir del CV proporcionado. La dirección postal completa del PDF no se ha incluido en la web pública; se muestra únicamente Valladolid, España.
+
+- El bloque visual principal utiliza una imagen del CV original (`assets/cv-hector.png`).
+- Se han eliminado los numerados `01`, `02`, etc. de secciones, proyectos y habilidades.
