@@ -47,3 +47,27 @@ footer{max-width:var(--max);margin:auto;padding:28px 24px;display:flex;justify-c
 
 .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
 .reveal.visible{opacity:1;transform:none}
+
+.projects-heading{display:grid;grid-template-columns:.65fr 1.35fr;gap:80px;align-items:end;margin-top:38px}
+.projects-heading .muted{max-width:520px}
+.project-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:14px;margin-top:55px}
+.project-card{min-height:390px;background:var(--panel);border:1px solid #222;position:relative;overflow:hidden;padding:30px;display:flex;flex-direction:column;justify-content:flex-end}
+.project-card:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 10%,rgba(255,59,48,.18),transparent 42%);pointer-events:none}
+.project-featured{min-height:470px;background:linear-gradient(145deg,#151010,#0e0e0e)}
+.project-number{position:absolute;top:24px;right:28px;color:#555;font:500 12px "Space Grotesk"}
+.project-content{position:relative;z-index:1;max-width:680px}
+.project-type{font-size:10px;letter-spacing:1.6px;color:var(--accent);font-weight:700}
+.project-card h3{font:600 clamp(36px,5vw,65px)/1 "Space Grotesk";letter-spacing:-2px;margin:13px 0 16px}
+.project-card p{color:#999;max-width:600px;line-height:1.7}
+.project-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:22px}
+.project-tags span{border:1px solid #363636;padding:6px 9px;border-radius:999px;color:#aaa;font-size:10px}
+.project-link{display:inline-flex;gap:10px;align-items:center;margin-top:27px;font-size:13px;font-weight:700;border-bottom:1px solid #777;padding-bottom:5px;width:max-content}
+.project-link:hover{color:var(--accent);border-color:var(--accent)}
+.project-link.disabled{color:#555;border-color:#333;cursor:default}
+.project-placeholder{background:#0d0d0d}
+.project-placeholder h3{font-size:35px;color:#777}
+@media(max-width:800px){
+ .projects-heading{grid-template-columns:1fr;gap:20px}
+ .project-grid{grid-template-columns:1fr}
+ .project-card,.project-featured{min-height:390px}
+}

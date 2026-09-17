@@ -6,6 +6,7 @@ Web CV pública, responsive y sin dependencias de JavaScript.
 - `index.html` — estructura y contenido.
 - `style.css` — diseño visual responsive.
 - `script.js` — pequeñas animaciones de entrada.
+- Sección `Proyectos` con AJCAR25 y enlace a https://ajcar25.vercel.app.
 
 ## Cómo usarla
 1. Abre `index.html` en el navegador para probarla.
